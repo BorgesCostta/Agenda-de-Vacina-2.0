@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agenda de Vacina</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-login.css">
+  <script src="https://kit.fontawesome.com/53b1c88edd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,14 +20,95 @@
         <div class="line3"></div>
       </div>
       <ul class="nav-list">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contatos</a></li>
+        <li><a class="indices" href="#">Inicio</a></li>
+        <li><a class="indices" href="#">Sobre</a></li>
+        <li><a class="indices" href="#">Projetos</a></li>
+        <li><a class="indices" href="#">Contatos</a></li>
       </ul>
     </nav>
   </header>
-  <main></main>
+  <main>
+
+    <div class="content first-content">
+      <div class="first-column">
+        <h2 class="title title-primary">seja bem vindo!</h2>
+        <button id="signin" class="btn btn-primary">entrar</button>
+      </div><!--first column-->
+      <div class="second-column">
+        <h2 class="title title-second">criar conta</h2>
+        <div class="social-media">
+          <ul class="list-social-media">
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-facebook-f"></i></i>
+              </li>
+            </a>
+          </ul>
+        </div><!--social media-->
+        <p class="description description-second">ou use seu email para se cadastrar:</p>
+        <form class="form">
+          <label class="label-input" for="">
+            <i class="far fa-user icon-modify"></i>
+            <input type="text" placeholder="Name">
+          </label>
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email">
+          </label>
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Password">
+          </label>
+          <button class="btn btn-second">cadastrar</button>
+        </form>
+      </div><!--second column-->
+    </div><!--first content-->
+
+
+    <div class="content second-content">
+      <div class="first-column">
+        <h2 class="title title-primary">olá, amigo</h2>
+        <button id="signup" class="btn btn-primary">cadastrar</button>
+      </div><!--first column-->
+      <div class="second-column">
+        <h2 class="title title-second">fazer login</h2>
+        <div class="social-media">
+          <ul class="list-social-media">
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-google-plus-g"></i>
+              </li>
+            </a>
+            <a class="link-social-media" href="#">
+              <li class="item-social-media">
+                <i class="fab fa-facebook-f"></i></i>
+              </li>
+            </a>
+          </ul>
+        </div><!--social media-->
+        <p class="description description-second">ou use seu email para entrar:</p>
+        <form class="form">
+          <label class="label-input" for="">
+            <i class="far fa-envelope icon-modify"></i>
+            <input type="email" placeholder="Email">
+          </label>
+          <label class="label-input" for="">
+            <i class="fas fa-lock icon-modify"></i>
+            <input type="password" placeholder="Password">
+          </label>
+          <a class="password" href="#">esqueceu a senha?</a>
+          <button class="btn btn-second">entrar</button>
+        </form>
+      </div><!--second column-->
+    </div><!--second content-->
+
+  </main>
+  <script src="js/app.js"></script>
   <script src="js/mobile-navbar.js"></script>
 </body>
 
